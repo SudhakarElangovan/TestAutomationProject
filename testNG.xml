@@ -1,0 +1,9 @@
+
+<suite name="Suite">
+  <test name="Test">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.test.demotest.TestDemoScript01"/>
+    </classes>
+  </test>
+</suite>
