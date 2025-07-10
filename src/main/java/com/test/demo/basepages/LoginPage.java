@@ -2,6 +2,8 @@ package com.test.demo.basepages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class LoginPage {
 
@@ -12,6 +14,9 @@ public class LoginPage {
 	By PasswordTextBox = By.id("password");
 	
 	By LoginButton = By.id("login-button");
+	
+	@FindBy(xpath="//button[@id='login-button']")
+	public WebElement LoginButton2;
 	
 	public LoginPage(WebDriver Driver) {
 		this.driver=Driver;
