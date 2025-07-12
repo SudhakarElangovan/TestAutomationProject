@@ -2,9 +2,11 @@
 <suite name="Suite">
   <test name="Test">
     <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="Username1"/>
+	<parameter name="password" value="Pass1"/>
     <classes>
       <class name="com.test.demotest.TestDemoScript01"/>
-       <class name="com.test.demotest.LoginwithInvalidCredentials"/>
+      <class name="com.test.demotest.LoginwithInvalidCredentials"/>
     </classes>
   </test>
 </suite>

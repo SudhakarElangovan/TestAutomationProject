@@ -1,5 +1,6 @@
 package com.test.demotest;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.test.demo.TestCaseBase.TestCaseBase;
@@ -8,8 +9,9 @@ import com.test.util.Log;
 
 public class LoginwithInvalidCredentials extends TestCaseBase {
 	
+	@Parameters({"username","password"})
 	@Test
-	public void TestScript() {
+	public void TestScript(String username,String password) {
 		
 		LoginPage loginpage = new LoginPage(driver);
 		
@@ -17,7 +19,7 @@ public class LoginwithInvalidCredentials extends TestCaseBase {
 		Log.info("Starting login test...");
 
 		test.info("User Logging in");
-		loginpage.Login("standard_user01", "secret_sauce");
+		loginpage.Login(username, password);
 		test.pass("Login Unsuccesfully");
 	}
 

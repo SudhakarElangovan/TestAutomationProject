@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 4 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,24 +103,25 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.demotest.LoginwithInvalidCredentials" class="method navigator-link" hash-for-method="TestScript">TestScript</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.demotest.TestDemoScript01" class="method navigator-link" hash-for-method="TestScript(user1, pass1)">TestScript(user1, pass1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.demotest.LoginwithInvalidCredentials" class="method navigator-link" hash-for-method="TestScript(Username1, Pass1)">TestScript(Username1, Pass1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.demotest.TestDemoScript01" class="method navigator-link" hash-for-method="TestScript(user2, pass2)">TestScript(user2, pass2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.demotest.TestDemoScript01" class="method navigator-link" hash-for-method="TestScript(user3, pass3)">TestScript(user3, pass3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.demotest.TestDemoScript01" class="method navigator-link" hash-for-method="TestScript">TestScript</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -140,18 +141,19 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestScript">
-                  </a> <!-- TestScript -->
+                  <a name="TestScript(Username1, Pass1)">
+                  </a> <!-- TestScript(Username1, Pass1) -->
                   <span class="method-name">TestScript</span>
+                  <span class="parameters">(Username1,Pass1)</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;app_logo&apos;]&quot;}
   (Session info: chrome=138.0.7204.101)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f690f58ca44de2dd751da0de8c904a3c, findElement {value=//div[@class=&apos;app_logo&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\elang\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f690f58ca44de2dd751da0de8c904a3c
+Command: [b35785fe905ae7070e0615602e504280, findElement {using=xpath, value=//div[@class=&apos;app_logo&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\elang\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59660}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59660/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b35785fe905ae7070e0615602e504280
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -165,9 +167,9 @@ Session ID: f690f58ca44de2dd751da0de8c904a3c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy49.getText(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.getText(Unknown Source)
 	at com.test.demo.basepages.LoginPage.Login(LoginPage.java:66)
-	at com.test.demotest.LoginwithInvalidCredentials.TestScript(LoginwithInvalidCredentials.java:20)
+	at com.test.demotest.LoginwithInvalidCredentials.TestScript(LoginwithInvalidCredentials.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
@@ -175,21 +177,122 @@ Session ID: f690f58ca44de2dd751da0de8c904a3c
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.test.demotest.TestDemoScript01</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestScript">
-                  </a> <!-- TestScript -->
+                  <a name="TestScript(user1, pass1)">
+                  </a> <!-- TestScript(user1, pass1) -->
                   <span class="method-name">TestScript</span>
+                  <span class="parameters">(user1,pass1)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;app_logo&apos;]&quot;}
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5336a13ad861fa3f9a02fde4bc4b8e93, findElement {using=xpath, value=//div[@class=&apos;app_logo&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\elang\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59580}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59580/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5336a13ad861fa3f9a02fde4bc4b8e93
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.getText(Unknown Source)
+	at com.test.demo.basepages.LoginPage.Login(LoginPage.java:66)
+	at com.test.demotest.TestDemoScript01.TestScript(TestDemoScript01.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestScript(user2, pass2)">
+                  </a> <!-- TestScript(user2, pass2) -->
+                  <span class="method-name">TestScript</span>
+                  <span class="parameters">(user2,pass2)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;app_logo&apos;]&quot;}
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28eee0ba9cf5c1b7ddb8c61c71a6c684, findElement {using=xpath, value=//div[@class=&apos;app_logo&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\elang\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59607}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59607/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28eee0ba9cf5c1b7ddb8c61c71a6c684
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.getText(Unknown Source)
+	at com.test.demo.basepages.LoginPage.Login(LoginPage.java:66)
+	at com.test.demotest.TestDemoScript01.TestScript(TestDemoScript01.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestScript(user3, pass3)">
+                  </a> <!-- TestScript(user3, pass3) -->
+                  <span class="method-name">TestScript</span>
+                  <span class="parameters">(user3,pass3)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;app_logo&apos;]&quot;}
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7db8fbc2cac0c67a10f0e50d14739f44, findElement {using=xpath, value=//div[@class=&apos;app_logo&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\elang\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59633/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7db8fbc2cac0c67a10f0e50d14739f44
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.getText(Unknown Source)
+	at com.test.demo.basepages.LoginPage.Login(LoginPage.java:66)
+	at com.test.demotest.TestDemoScript01.TestScript(TestDemoScript01.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -201,7 +304,9 @@ Session ID: f690f58ca44de2dd751da0de8c904a3c
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;Pass1&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;Username1&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.test.demotest.TestDemoScript01&quot;/&gt;
       &lt;class name=&quot;com.test.demotest.LoginwithInvalidCredentials&quot;/&gt;
@@ -244,20 +349,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestScript')
 data.setCell(0, 2, 'com.test.demotest.TestDemoScript01')
-data.setCell(0, 3, 510);
+data.setCell(0, 3, 273);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TestScript')
 data.setCell(1, 2, 'com.test.demotest.LoginwithInvalidCredentials')
-data.setCell(1, 3, 438);
+data.setCell(1, 3, 215);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestScript')
+data.setCell(2, 2, 'com.test.demotest.TestDemoScript01')
+data.setCell(2, 3, 206);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestScript')
+data.setCell(3, 2, 'com.test.demotest.TestDemoScript01')
+data.setCell(3, 3, 174);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 948 ms</span>
+              <span class="suite-total-time">Total running time: 868 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -299,39 +412,69 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">359 ms</span>
+                <span class="method-start">240 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TestScript</span>
-                <span class="method-start">3807 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestScript(user1, pass1)</span>
+                <span class="method-start">2749 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=TestScript status=SUCCESS method=TestDemoScript01.TestScript()[pri:0, instance:com....)</span>
-                <span class="method-start">4320 ms</span>
+                <span class="method-name">tearDown([TestResult name=TestScript status=FAILURE method=TestDemoScript01.TestScript(java.lang.String,java....)</span>
+                <span class="method-start">3028 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Setup</span>
+                <span class="method-start">3381 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestScript(user2, pass2)</span>
+                <span class="method-start">5049 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TestScript status=FAILURE method=TestDemoScript01.TestScript(java.lang.String,java....)</span>
+                <span class="method-start">5256 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Setup</span>
+                <span class="method-start">5544 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestScript(user3, pass3)</span>
+                <span class="method-start">7932 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TestScript status=FAILURE method=TestDemoScript01.TestScript(java.lang.String,java....)</span>
+                <span class="method-start">8107 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.demotest.LoginwithInvalidCredentials</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">4617 ms</span>
+                <span class="method-start">8358 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">TestScript</span>
-                <span class="method-start">6741 ms</span>
+                <span class="method-name">TestScript(Username1, Pass1)</span>
+                <span class="method-start">9910 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=TestScript status=FAILURE method=LoginwithInvalidCredentials.TestScript()[pri:0, in...)</span>
-                <span class="method-start">7182 ms</span>
+                <span class="method-name">tearDown([TestResult name=TestScript status=FAILURE method=LoginwithInvalidCredentials.TestScript(java.lang.S...)</span>
+                <span class="method-start">10126 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.demotest.TestDemoScript01</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">teardownReport</span>
-                <span class="method-start">7719 ms</span>
+                <span class="method-start">10448 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

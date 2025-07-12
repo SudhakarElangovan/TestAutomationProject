@@ -5,8 +5,8 @@
     <classes>
       <class name="com.test.demotest.LoginwithInvalidCredentials">
         <methods>
-          <include name="setupReport"/>
           <include name="TestScript"/>
+          <include name="setupReport"/>
           <include name="tearDown"/>
           <include name="Setup"/>
           <include name="teardownReport"/>
