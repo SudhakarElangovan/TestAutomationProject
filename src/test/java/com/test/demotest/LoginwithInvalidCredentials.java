@@ -6,7 +6,7 @@ import com.test.demo.TestCaseBase.TestCaseBase;
 import com.test.demo.basepages.LoginPage;
 import com.test.util.Log;
 
-public class TestDemoScript01 extends TestCaseBase {
+public class LoginwithInvalidCredentials extends TestCaseBase {
 	
 	@Test
 	public void TestScript() {
@@ -17,8 +17,8 @@ public class TestDemoScript01 extends TestCaseBase {
 		Log.info("Starting login test...");
 
 		test.info("User Logging in");
-		loginpage.Login("standard_user", "secret_sauce");
-		test.pass("Login Succesfully");
+		loginpage.Login("standard_user01", "secret_sauce");
+		test.pass("Login Unsuccesfully");
 	}
 
 }

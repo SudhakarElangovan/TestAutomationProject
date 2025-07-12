@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.test.util.Log;
 
@@ -26,6 +27,9 @@ public class LoginPage {
 	
 	@FindBy(id="password")
 	WebElement passwordTextbox;
+	
+	@FindBy(xpath="//div[@class='app_logo']")
+	WebElement PageTitle;
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -53,5 +57,13 @@ public class LoginPage {
 		Log.info("Clicking login button..");
 		LoginButton.click();
 //		driver.findElement(loginButton).click();	
+	}
+	public void Login(String UserName,String Password) {
+		Log.info("Adding credentials");
+		enterUsername(UserName);
+		enterPassword(Password);
+		clickLogin();
+		Assert.assertTrue(PageTitle.getText().contains("Swag Labs"), "Title is Displayed");
+		//return PageTitle.getText().contains("Swag Labs");
 	}
 }
